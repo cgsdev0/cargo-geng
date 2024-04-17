@@ -22,7 +22,7 @@ pub fn run_wasm_bindgen(
     wasm_bindgen
         .input_path(&executable)
         .web(true)?
-        .typescript(false)
+        .typescript(true)
         .generate_output()?
         .emit(&out_dir)?;
     Ok(())
